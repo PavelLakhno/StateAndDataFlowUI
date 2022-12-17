@@ -10,7 +10,7 @@ import SwiftUI
 struct RegisterView: View {
     @State private var name = ""
     @State private var color = Color.red
-    @State private var disabled = true
+    @State private var isDisabled = true
     @EnvironmentObject private var userManager: UserManager
     @StateObject private var timer = TimeCounter()
 
@@ -33,7 +33,7 @@ struct RegisterView: View {
                     Image(systemName: "checkmark.circle")
                     Text("OK")
                 }
-            }.disabled(disabled)
+            }.disabled(isDisabled)
         }
     }
     
@@ -48,10 +48,10 @@ struct RegisterView: View {
     private func checkName() {
         if name.count > 2 {
             color = .green
-            disabled = false
+            isDisabled = false
         } else {
             color = .red
-            disabled = true
+            isDisabled = true
         }
     }
 }

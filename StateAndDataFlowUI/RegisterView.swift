@@ -9,18 +9,31 @@ import SwiftUI
 
 struct RegisterView: View {
     @State private var name = ""
+    @State private var color = Color.red
+    @State private var disabled = true
     @EnvironmentObject private var userManager: UserManager
-    
+    @StateObject private var timer = TimeCounter()
+
     var body: some View {
         VStack {
-            TextField("Enter your name...", text: $name)
-                .multilineTextAlignment(.center)
+            HStack {
+                TextField("Enter your name...", text: $name)
+                    .onChange(of: name) {_ in
+                        checkName()
+                    }
+                    .multilineTextAlignment(.center)
+
+                Text(name.count.formatted())
+                    .foregroundColor(color)
+            }
+            .padding()
+            
             Button(action: registerUser) {
                 HStack {
                     Image(systemName: "checkmark.circle")
                     Text("OK")
                 }
-            }
+            }.disabled(disabled)
         }
     }
     
@@ -28,6 +41,17 @@ struct RegisterView: View {
         if !name.isEmpty {
             userManager.name = name
             userManager.isRegister.toggle()
+            StorageManager.share.save(name: name)
+        }
+    }
+    
+    private func checkName() {
+        if name.count > 2 {
+            color = .green
+            disabled = false
+        } else {
+            color = .red
+            disabled = true
         }
     }
 }

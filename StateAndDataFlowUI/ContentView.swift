@@ -24,7 +24,15 @@ struct ContentView: View {
             ButtonView(timer: timer)
             
             Spacer()
+            
+            ButtonLogoutView(action: removeUser)
         }
+    }
+    
+    private func removeUser() {
+        StorageManager.share.remove(name: userManager.name)
+        userManager.name = ""
+        userManager.isRegister.toggle()
     }
 }
 
@@ -47,6 +55,26 @@ struct ButtonView: View {
         }
         .frame(width: 200, height: 60)
         .background(.red)
+        .cornerRadius(20)
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(.black, lineWidth: 4)
+        )
+    }
+}
+
+struct ButtonLogoutView: View {
+    var action: () -> Void
+    
+    var body: some View {
+        Button(action: action) {
+            Text("Logout")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+        }
+        .frame(width: 200, height: 60)
+        .background(.blue)
         .cornerRadius(20)
         .overlay(
             RoundedRectangle(cornerRadius: 20)

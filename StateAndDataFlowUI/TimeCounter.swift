@@ -10,7 +10,7 @@ import Combine
 
 class TimeCounter: ObservableObject {
     let objectWillChange = PassthroughSubject<TimeCounter, Never>()
-    var counter = StorageManager.share.fetchName().count
+    var counter = 3
     var buttonTitle = "Start"
     var timer: Timer?
     
@@ -40,7 +40,7 @@ class TimeCounter: ObservableObject {
     
     private func buttonDidTapped() {
         if buttonTitle == "Reset" {
-            counter = StorageManager.share.fetchName().count
+            counter = 3
             buttonTitle = "Start"
         } else {
             buttonTitle = "Wait..."

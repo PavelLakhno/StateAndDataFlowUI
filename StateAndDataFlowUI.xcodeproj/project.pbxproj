@@ -9,26 +9,30 @@
 /* Begin PBXBuildFile section */
 		0B6C182D294DEC2E003BCC3A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C182C294DEC2E003BCC3A /* StorageManager.swift */; };
 		CE74F78E294C9B9A002BFF2A /* StateAndDataFlowUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F78D294C9B9A002BFF2A /* StateAndDataFlowUIApp.swift */; };
-		CE74F790294C9B9A002BFF2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F78F294C9B9A002BFF2A /* ContentView.swift */; };
+		CE74F790294C9B9A002BFF2A /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F78F294C9B9A002BFF2A /* TimerView.swift */; };
 		CE74F792294C9B9C002BFF2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE74F791294C9B9C002BFF2A /* Assets.xcassets */; };
 		CE74F795294C9B9C002BFF2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE74F794294C9B9C002BFF2A /* Preview Assets.xcassets */; };
 		CE74F7A7294C9EAB002BFF2A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F7A3294C9EAB002BFF2A /* RegisterView.swift */; };
 		CE74F7A8294C9EAB002BFF2A /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F7A4294C9EAB002BFF2A /* StarterView.swift */; };
 		CE74F7A9294C9EAB002BFF2A /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F7A5294C9EAB002BFF2A /* TimeCounter.swift */; };
 		CE74F7AA294C9EAB002BFF2A /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74F7A6294C9EAB002BFF2A /* UserManager.swift */; };
+		CED686B529505A5F004753CD /* ButtonAppearanceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED686B429505A5F004753CD /* ButtonAppearanceModifier.swift */; };
+		CED686B729505AEB004753CD /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED686B629505AEB004753CD /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B6C182C294DEC2E003BCC3A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		CE74F78A294C9B9A002BFF2A /* StateAndDataFlowUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlowUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE74F78D294C9B9A002BFF2A /* StateAndDataFlowUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowUIApp.swift; sourceTree = "<group>"; };
-		CE74F78F294C9B9A002BFF2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE74F78F294C9B9A002BFF2A /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		CE74F791294C9B9C002BFF2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE74F794294C9B9C002BFF2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE74F7A3294C9EAB002BFF2A /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		CE74F7A4294C9EAB002BFF2A /* StarterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		CE74F7A5294C9EAB002BFF2A /* TimeCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		CE74F7A6294C9EAB002BFF2A /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		CED686B429505A5F004753CD /* ButtonAppearanceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAppearanceModifier.swift; sourceTree = "<group>"; };
+		CED686B629505AEB004753CD /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +66,13 @@
 			isa = PBXGroup;
 			children = (
 				CE74F78D294C9B9A002BFF2A /* StateAndDataFlowUIApp.swift */,
-				CE74F78F294C9B9A002BFF2A /* ContentView.swift */,
+				CE74F78F294C9B9A002BFF2A /* TimerView.swift */,
 				CE74F7A3294C9EAB002BFF2A /* RegisterView.swift */,
 				CE74F7A4294C9EAB002BFF2A /* StarterView.swift */,
 				CE74F7A5294C9EAB002BFF2A /* TimeCounter.swift */,
 				CE74F7A6294C9EAB002BFF2A /* UserManager.swift */,
+				CED686B429505A5F004753CD /* ButtonAppearanceModifier.swift */,
+				CED686B629505AEB004753CD /* ButtonView.swift */,
 				0B6C182C294DEC2E003BCC3A /* StorageManager.swift */,
 				CE74F791294C9B9C002BFF2A /* Assets.xcassets */,
 				CE74F793294C9B9C002BFF2A /* Preview Content */,
@@ -156,9 +162,11 @@
 				CE74F7A8294C9EAB002BFF2A /* StarterView.swift in Sources */,
 				CE74F7A7294C9EAB002BFF2A /* RegisterView.swift in Sources */,
 				0B6C182D294DEC2E003BCC3A /* StorageManager.swift in Sources */,
-				CE74F790294C9B9A002BFF2A /* ContentView.swift in Sources */,
+				CED686B529505A5F004753CD /* ButtonAppearanceModifier.swift in Sources */,
+				CE74F790294C9B9A002BFF2A /* TimerView.swift in Sources */,
 				CE74F7A9294C9EAB002BFF2A /* TimeCounter.swift in Sources */,
 				CE74F78E294C9B9A002BFF2A /* StateAndDataFlowUIApp.swift in Sources */,
+				CED686B729505AEB004753CD /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
